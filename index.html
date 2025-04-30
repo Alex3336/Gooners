@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <title>Gooners</title>
 </head>
 <body>
-  
+    <header>
+        <div class="container">
+            <div class="logo logo-header">
+                <img 
+                    src="./img/Logo.svg" 
+                    alt="logo"
+                    >
+                Gooners
+            </div>
+            <!-- спитати на рахунок інтерактиву -->
+            <a class="nav-link" href="#">Наша команда</a>
+            <a class="nav-link" href="#">Контакти</a>
+            <div class="switch-container">
+                <label class="switch">
+                    <input 
+                        type="checkbox" 
+                        class="switcher" 
+                        checked
+                        >
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <h3
+                class="welcome"
+                >
+                Вітаємо,<h3 class="js-userName"></h3>
+            </h3>
+        </div>
+    </header>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <!-- секція №4 -->
+                <h2 class="calculator-title">Калькулятор</h2>
+                <input class="calculator-number" type="text" placeholder="Введіть число">
+                <input class="calculator-number" type="text" placeholder="Введіть число">
+                <ul class="operations-list">
+                    <li class="operation-item">
+                        <button class="operation"></button>
+                    </li>
+                    <li class="operation-item">
+                        <button class="operation"></button>
+                    </li>
+                    <li class="operation-item">
+                        <button class="operation"></button>
+                    </li>
+                    <li class="operation-item">
+                        <button class="operation"></button>
+                    </li>
+                </ul>
+                <div class="equal"></div>
+                <p class="result">Результат</p>
+            </div>
+            
+        </div>
+    </body>
 </body>
 </html>
