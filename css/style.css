@@ -17,7 +17,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 36px;
+  width: 40px;
   height: 20px;
   cursor: pointer;
 }
@@ -43,17 +43,195 @@
 .slider::before {
   position: absolute;
   content: "";
-  width: 12px;
-  height: 12px;
-  bottom: 3px;
-  left: 2px;
+  width: 18px;
+  height: 18px;
   background-color: #FFF;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 50%;
+  border: 0.5px #000 solid;
 }
 
 .switcher:checked + .slider::before {
-  -webkit-transform: translateX(18px);
-  transform: translateX(18px);
-}/*# sourceMappingURL=style.css.map */
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+header > .container {
+  height: 80px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.logo-header {
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+}
+
+.logo-text {
+  font-size: 12px;
+}
+
+#header-select:focus, #header-select:focus-visible, #header-select {
+  outline: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+#header-select {
+  all: unset;
+  width: 100px;
+  background-image: url(/img/header-select-arrow.svg);
+  background-size: 13px;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  font-size: 12px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.header-welcome {
+  font-weight: inherit;
+  font-size: 12px;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.container {
+  width: 1090px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  padding-inline: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 36px;
+  padding-block: 36px;
+}
+
+.calculator-title {
+  font-size: 16px;
+  color: #000;
+  display: inline;
+}
+
+.calculator-input, .result {
+  color: #7e7e7e;
+  background-color: #D7D7D7;
+  outline: none;
+  border: none;
+  width: 95px;
+  height: 15px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.operation-butt, .equal {
+  color: #FFF;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.operations-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  height: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.equal {
+  cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.result {
+  width: 78px;
+}
+
+.calculator-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 38px;
+     -moz-column-gap: 38px;
+          column-gap: 38px;
+}
+
+@impor;/*# sourceMappingURL=style.css.map */

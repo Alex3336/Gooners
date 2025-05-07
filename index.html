@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <title>Gooners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo logo-header">
-                <img 
-                    src="./img/Logo.svg" 
-                    alt="logo"
-                    >
-                Gooners
+                <img class="logo-img logo-header-img" src="./img/logo.svg" alt="logo">
+                <p class="logo-text logo-header-text">Gooners</p>
             </div>
-            <!-- спитати на рахунок інтерактиву -->
+            <select name="select" id="header-select" aria-placeholder="Інтерактив">
+                <option 
+                    selected 
+                    class="header-option"
+                    >
+                    Інтерактив
+                </option>
+                <option class="header-option">Числовий</option>
+                <option class="header-option">Ігровий</option>
+                <option class="header-option">Ознайомчий</option>
+            </select>
             <a class="nav-link" href="#">Наша команда</a>
             <a class="nav-link" href="#">Контакти</a>
             <div class="switch-container">
                 <label class="switch">
                     <input 
-                        type="checkbox" 
-                        class="switcher" 
+                        type="checkbox"
+                        class="switcher"
                         checked
                         >
                     <span class="slider"></span>
                 </label>
             </div>
             <h3
-                class="welcome"
+                class="header-welcome"
                 >
-                Вітаємо,<h3 class="js-userName"></h3>
+                Вітаємо, <h3 class="js-userName"></h3>
             </h3>
         </div>
     </header>
@@ -42,26 +52,81 @@
             <div class="calculator">
                 <!-- секція №4 -->
                 <h2 class="calculator-title">Калькулятор</h2>
-                <input class="calculator-number" type="text" placeholder="Введіть число">
-                <input class="calculator-number" type="text" placeholder="Введіть число">
-                <ul class="operations-list">
-                    <li class="operation-item">
-                        <button class="operation"></button>
+                <div class="calculator-flexbox">
+                    <input class="calculator-input first" type="text" placeholder="Введіть число">
+                    <ul class="operations-list">
+                        <li class="operation-item">
+                            <button class="operation-butt">+</button>
+                        </li>
+                        <li class="operation-item">
+                            <button class="operation-butt">-</button>
+                        </li>
+                        <li class="operation-item">
+                            <button class="operation-butt">*</button>
+                        </li>
+                        <li class="operation-item">
+                            <button class="operation-butt">/</button>
+                        </li>
+                    </ul>
+                    <input class="calculator-input second" type="text" placeholder="Введіть число">
+                    <div class="equal">=</div>
+                    <p class="result">Результат</p>
+                </div>
+            </div>
+            <div class="football">
+                <!-- секція №7 -->
+                <h2 class="football-title">Футбол</h2>
+                <div class="football-pitch">
+                    <img class="ball" src="" alt="ball">
+                </div>
+            </div>
+            <div class="scientists">
+                <!-- секція №10 -->
+                <h2 class="scientists-title">Обери вченого/их</h2>
+                <ul class="scientists-choose-list">
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                    <li class="scientists-choose-item"></li>
+                </ul>
+                <ul class="scientists-questions-list">
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Які вчені народилися в 19 ст.</p>
                     </li>
-                    <li class="operation-item">
-                        <button class="operation"></button>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Відсортувати вчених за алфавітом</p>
                     </li>
-                    <li class="operation-item">
-                        <button class="operation"></button>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Відсортувати вчених за кількістю прожитих років</p>
                     </li>
-                    <li class="operation-item">
-                        <button class="operation"></button>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Знайти вченого, який народився найпізніше</p>
+                    </li>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Знайти рік народження Albert Einshtein</p>
+                    </li>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Знайти вчених, прізвища яких починаються на на літеру “С” </p>
+                    </li>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Видалити всіх вчених, ім’я яких починається на “А”</p>
+                    </li>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</p>
+                    </li>
+                    <li class="scientists-questions-item">
+                        <p class="scientists-questions-text">Знайти вчених, в яких співпадають перші літери імені і прізвища</p>
                     </li>
                 </ul>
-                <div class="equal"></div>
-                <p class="result">Результат</p>
             </div>
-            
         </div>
     </body>
 </body>
