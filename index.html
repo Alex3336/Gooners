@@ -1,139 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gooners</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Coding CodingMagic</title>
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&familydisplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo logo-header">
-                <img class="logo-img logo-header-img" src="./img/logo.svg" alt="logo">
-                <p class="logo-text logo-header-text">Gooners</p>
-            </div>
-            <select name="select" id="header-select" aria-placeholder="Інтерактив">
-                <option 
-                    selected 
-                    class="header-option"
-                    >
-                    Інтерактив
-                </option>
-                <option class="header-option">Числовий</option>
-                <option class="header-option">Ігровий</option>
-                <option class="header-option">Ознайомчий</option>
-            </select>
-            <a class="nav-link" href="#">Наша команда</a>
-            <a class="nav-link" href="#">Контакти</a>
-            <div class="switch-container">
-                <label class="switch">
-                    <input 
-                        type="checkbox"
-                        class="switcher"
-                        checked
-                        >
-                    <span class="slider"></span>
-                </label>
-            </div>
-            <h3
-                class="header-welcome"
-                >
-                Вітаємо, <h3 class="js-userName"></h3>
-            </h3>
-        </div>
-    </header>
     <main>
+        <!-- 3 секція -->
         <div class="container">
-            <div class="calculator">
-                <!-- секція №4 -->
-                <h2 class="calculator-title">Калькулятор</h2>
-                <div class="calculator-flexbox">
-                    <input class="calculator-input first" type="text" placeholder="Введіть число">
-                    <ul class="operations-list">
-                        <li class="operation-item">
-                            <button class="operation-button js-add">+</button>
-                        </li>
-                        <li class="operation-item">
-                            <button class="operation-button js-subtraction">-</button>
-                        </li>
-                        <li class="operation-item">
-                            <button class="operation-button js-multiply">*</button>
-                        </li>
-                        <li class="operation-item">
-                            <button class="operation-button js-devide">/</button>
-                        </li>
-                    </ul>
-                    <input class="calculator-input second" type="text" placeholder="Введіть число">
-                    <button class="result-button">=</button>
-                    <p class="result">Результат</p>
-                </div>
-            </div>
-            <div class="football">
-                <!-- секція №7 -->
-                <h2 class="football-title">Футбол</h2>
-                <div class="football-pitch">
-                    <img class="ball" src="./img/ball.png" alt="ball">
-                </div>
-            </div>
-            <div class="scientists">
-                <!-- секція №10 -->
-                <h2 class="scientists-title">Обери вченого/их</h2>
-                <ul class="scientists-choose-list">
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
-                    <li class="scientists-choose-item"></li>
+        <section class="stone-scissors-paper">
+            <div class="central-div">
+                <h2 class="title">Камінь - ножиці - папір</h2>
+                <ul class="btn-ul">
+                    <li><button id="stone" class="game-btn">
+                        <svg width="40" height="40">
+                            <use href="./img/symbol.svg#stone"></use>
+                        </svg>
+                    </button></li>
+                    <li><button id="scissors" class="game-btn">
+                        <svg width="40" height="40">
+                            <use href="./img/symbol.svg#scissors"></use>
+                        </svg>
+                    </button></li>
+                    <li><button id="paper" class="game-btn">
+                        <svg width="40" height="40">
+                            <use href="./img/symbol.svg#paper"></use>
+                        </svg>
+                    </button></li>
                 </ul>
-                <ul class="scientists-questions-list">
-                    <div class="scientists-questions-position">
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Які вчені народилися в 19 ст.</p>
-                        </li>
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Відсортувати вчених за алфавітом</p>
-                        </li>
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Відсортувати вчених за кількістю прожитих років</p>
-                        </li>
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Знайти вченого, який народився найпізніше</p>
-                        </li>
-                    </div>
-                    <div class="scientists-questions-position">
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Знайти рік народження Albert Einshtein</p>
-                        </li>
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Знайти вчених, прізвища яких починаються на на літеру “С” </p>
-                        </li>
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Видалити всіх вчених, ім’я яких починається на “А”</p>
-                        </li>
-                        <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</p>
-                        </li>
-                    </div>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Знайти вчених, в яких співпадають перші літери імені і прізвища</p>
+                <p class="result"></p>
+                <button class="com-btn">Варіант комп’ютера</button>
+            </div>
+        <ul class="score">
+            <li>
+                <p>Рахунок:</p>
+            </li>
+            <li>
+                <p >Комп’ютер - <span class="computer-score">0</span></p>
+            </li>
+            <li>
+                <p>Ви - <span class="user-score" >0</span></p>
+            </li>
+        </ul>
+        </section>
+                 <!-- 6 секція -->
+        <section class="google-dino">
+            <div class="central-div">
+                <h2 class="title">Google динозавр</h2>
+            </div>
+            <div class="field">
+                <div class="game">
+                    <div class="dinosaur"></div>
+                    <div class="cactus"></div>
+                </div>
+                <div class="game-over">
+                    <h4>GAME OVER</h4>
+                    <button class="restart"></button>
+                </div>
+            </div>
+        </section>
+                <!-- 9 секція -->
+        <section class="slider-sec">
+            <div class="central-div">
+                <h2 class="title">Наша команда</h2>
+                <button id="arrow-left" class="arrow">
+                    <svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M51 1L0.999998 51L51 101" stroke="black"/>
+                        </svg>
+                </button>
+                
+                <ul class="slider">
+                    <li class="slider-el"><img width="150" height="150">
+                        <p class="student-name">Сашко</p>
+                        <p>Інформація про роботу, яку він/вона виконав/ла</p>
+                    </li>
+                    <li class="slider-el"><img width="150" height="150">
+                        <p class="student-name">Софія</p>
+                        <p>Інформація про роботу, яку він/вона виконав/ла</p></li>
+                    <li class="slider-el"><img width="150" height="150">
+                        <p class="student-name">Микита</p>
+                        <p>Інформація про роботу, яку він/вона виконав/ла</p></li>
+                </ul>
+                
+                <ul class="slider-rec">
+                    <li>
+                        <svg class="rect-svg" width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+                        </svg>
+                    </li>
+                    <li> 
+                        <svg class="rect-svg" width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="rect-svg" width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+                        </svg>
                     </li>
                 </ul>
+                <button id="arrow-right" class="arrow">
+                    <svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L51 51L1 101" stroke="black"/>
+                        </svg>
+                </button>
             </div>
+        </section>
         </div>
     </main>
-    <script type="module" src="./js/calculator.js"></script>
-    <script type="module" src="./js/football.js"></script>
+    <footer>
+        <div class="container">
+            <div class="footer-div">
+                <div class="logo">
+                    <!-- <svg class="logo" width="165" height="70">
+                        <use href="./img/symbol.svg#logo"></use>
+                    </svg> -->
+                </div>
+                <div>
+                    <ul class="info">
+                        <li><a class="info-link" href="tel:+38 (123) 456 78 90">Тел: +38 (123) 456 78 90</a></li>
+                        <li><a class="info-link" href="malito:codingmagic@gmail.com">E-Mail: codingmagic@gmail.com</a></li>
+                        <li><a class="info-link" href="#">Facebook: CodingMagic</a></li>
+                        <li><a class="info-link" href="#">Twitter: CodingMagic</a></li>
+                        <li><a class="info-link" href="#">Instagram: CodingMagic</a></li>
+                    </ul>
+                </div>
+                <div class="footer-form-div">
+                    <form class="footer-form">
+                        <input type="email" id="footer-form-email" placeholder="Ваша ел. адреса...">
+                        <button class="submit-btn js-open-gratitude" type="button"
+                        aria-expanded="false" 
+                        aria-controls="modal-gratitude">
+                            Підписатись</button>
+                    </form>
+                    <p class="form-note">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="gratitude-container js-gratitude-container" id="modal-gratitude">
+
+        <div class="subscribe-gratitude">
+        <button class="gratitude-toggle js-close-gratitude"> 
+            <svg 
+            fill="currentColor" 
+            viewBox="0 0 20 20" 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24"> 
+            <path 
+                fill-rule="evenodd" 
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" 
+                clip-rule="evenodd" 
+            ></path> 
+            </svg> 
+        </button> 
+            <h1>Дякую за підписку!</h1>
+        </div>
+    </div>
+    <script src="./sofia-js/footer.js" type="module"></script>
+    <script src="./sofia-js/_stone-scissors-paper.js" type="module"></script>
+    <script src="./sofia-js/slider.js" type="module"></script>
+    <script src="./sofia-js/_dino.js" type="module"></script>
 </body>
 </html>
