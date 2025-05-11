@@ -1,0 +1,27 @@
+.football{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding-block: 36px;
+}
+.football-title{
+    font-weight: 400;
+    font-size: 16px;
+}
+.football-pitch{
+    width: 720px;
+    height: 220px;
+    border: 2px solid #000000;
+    border-radius: 37px;
+    background-color: $footballBackground;
+    position: relative;
+    box-sizing: border-box;
+}
+.ball{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top: 80px;
+}

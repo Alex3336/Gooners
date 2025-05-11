@@ -1,0 +1,50 @@
+.scientists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 36px;
+}
+.scientists-title{
+    font-weight: 400;
+    font-size: 16px;
+}
+.scientists-choose-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 36px 59px;
+    width: 577px;
+}
+.scientists-choose-item{
+    width: 100px;
+    height: 100px;
+    background-color: $scientistsBackground;
+    border-radius: 20px;
+}
+.scientists-questions-list{
+    display: flex;
+    width: 857px;
+    flex-wrap: wrap;
+    column-gap: 36px;
+    row-gap: 20px;
+    justify-content: center;
+}
+.scientists-questions-item{
+    background-color: $black;
+    border-radius: 20px;
+    height: min-content;
+}
+.scientists-questions-text{
+    color: $white;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+.scientists-questions-position{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-end;
+    &:nth-child(2){
+        align-items: flex-start;
+    }
+}
