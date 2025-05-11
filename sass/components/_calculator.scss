@@ -14,14 +14,14 @@
     color: $subTextColor;
     background-color: $textAreaBackground;
     outline: none;  border: none;
-    width: 95px;  height: 15px;
+    width: 135px;  height: 35px;
     border-radius: 20px;
     padding: 10px 20px;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;  font-size: 12px;
     box-shadow: 3px 3px 0px 0px #00000040;
 }
-.operation-butt{
+.operation-button{
     color: $white;
     background-color: $black;
     width: 25px;  height: 25px;
@@ -37,16 +37,15 @@
     gap: 10px;  height: 60px;
     flex-wrap: wrap;
 }
-.equal{
-    @extend .operation-butt;
-    cursor: default;
+.result-button{
+    @extend .operation-button;
     display: flex;
     align-items: center;
     justify-content: center
 }
 .result{
-    @extend .calculator-input;
-    width: 78px;
+    @extend .calculator-input;  
+    width: max-content;
 }
 .calculator-flexbox{
     display: flex;

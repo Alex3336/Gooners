@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Gooners</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <title>Gooners</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -47,7 +47,7 @@
             </h3>
         </div>
     </header>
-    <body>
+    <main>
         <div class="container">
             <div class="calculator">
                 <!-- секція №4 -->
@@ -56,20 +56,20 @@
                     <input class="calculator-input first" type="text" placeholder="Введіть число">
                     <ul class="operations-list">
                         <li class="operation-item">
-                            <button class="operation-butt">+</button>
+                            <button class="operation-button js-add">+</button>
                         </li>
                         <li class="operation-item">
-                            <button class="operation-butt">-</button>
+                            <button class="operation-button js-subtraction">-</button>
                         </li>
                         <li class="operation-item">
-                            <button class="operation-butt">*</button>
+                            <button class="operation-button js-multiply">*</button>
                         </li>
                         <li class="operation-item">
-                            <button class="operation-butt">/</button>
+                            <button class="operation-button js-devide">/</button>
                         </li>
                     </ul>
                     <input class="calculator-input second" type="text" placeholder="Введіть число">
-                    <div class="equal">=</div>
+                    <button class="result-button">=</button>
                     <p class="result">Результат</p>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                 <!-- секція №7 -->
                 <h2 class="football-title">Футбол</h2>
                 <div class="football-pitch">
-                    <img class="ball" src="" alt="ball">
+                    <img class="ball" src="./img/ball.png" alt="ball">
                 </div>
             </div>
             <div class="scientists">
@@ -98,36 +98,42 @@
                     <li class="scientists-choose-item"></li>
                 </ul>
                 <ul class="scientists-questions-list">
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Які вчені народилися в 19 ст.</p>
-                    </li>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Відсортувати вчених за алфавітом</p>
-                    </li>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Відсортувати вчених за кількістю прожитих років</p>
-                    </li>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Знайти вченого, який народився найпізніше</p>
-                    </li>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Знайти рік народження Albert Einshtein</p>
-                    </li>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Знайти вчених, прізвища яких починаються на на літеру “С” </p>
-                    </li>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Видалити всіх вчених, ім’я яких починається на “А”</p>
-                    </li>
-                    <li class="scientists-questions-item">
-                        <p class="scientists-questions-text">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</p>
-                    </li>
+                    <div class="scientists-questions-position">
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Які вчені народилися в 19 ст.</p>
+                        </li>
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Відсортувати вчених за алфавітом</p>
+                        </li>
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Відсортувати вчених за кількістю прожитих років</p>
+                        </li>
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Знайти вченого, який народився найпізніше</p>
+                        </li>
+                    </div>
+                    <div class="scientists-questions-position">
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Знайти рік народження Albert Einshtein</p>
+                        </li>
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Знайти вчених, прізвища яких починаються на на літеру “С” </p>
+                        </li>
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Видалити всіх вчених, ім’я яких починається на “А”</p>
+                        </li>
+                        <li class="scientists-questions-item">
+                            <p class="scientists-questions-text">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</p>
+                        </li>
+                    </div>
                     <li class="scientists-questions-item">
                         <p class="scientists-questions-text">Знайти вчених, в яких співпадають перші літери імені і прізвища</p>
                     </li>
                 </ul>
             </div>
         </div>
-    </body>
+    </main>
+    <script type="module" src="./js/calculator.js"></script>
+    <script type="module" src="./js/football.js"></script>
 </body>
 </html>
