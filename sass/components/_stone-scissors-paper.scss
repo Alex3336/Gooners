@@ -15,7 +15,7 @@
         margin-top: 35px;
         @include btn();
     }
-    & .result{
+    & .stone-scissors-paper-result{
         margin-top: 35px;
     }
 }
@@ -42,8 +42,9 @@
     position: absolute;
     padding: 0;
     top: 93px;
-    right: 219px;
+    left: 500px;
     & p{
         margin-bottom: 7px;
+        width: max-content;
     }
 }
