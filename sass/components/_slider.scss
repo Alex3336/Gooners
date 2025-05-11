@@ -1,0 +1,62 @@
+.slider-sec{
+    display: flex;
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    border: none;
+    width: 55px;
+    height: 100px;
+    background-color: white;
+    top: 116px;
+}
+#arrow-right{
+    right: 92px;
+}
+#arrow-left{
+    left: 92px;
+}
+.slider{
+    // position: relative;
+    padding: 36px 0 0px;
+    & li{
+        & img{
+            border-radius: 20px;
+            border: none;
+            background-color: #D9D9D9;
+        }
+    }
+}
+.slider-el{
+    display: none;
+    // position: absolute;
+    width: 320px;
+    height: 225px;
+    margin: 0 auto;
+    // z-index: 0;
+}
+.isActive{
+    display: block;
+    // z-index: 1;
+}
+.svg-active{
+    width: 30px;
+    & rect{
+        fill: #797979;
+        width: 30px;
+    }
+}
+.student-name{
+    @include text($size:14px);
+    margin: 20px 0px;
+}
+.slider-rec{
+    display: flex;
+    gap: 8px;
+    width: 77px;
+    margin: 23px 0px 0px 200px;
+    padding: none;
+}
+#icon{
+    fill: grey;
+}
