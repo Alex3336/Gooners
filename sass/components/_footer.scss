@@ -1,0 +1,42 @@
+.footer-div{
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    margin: 60px 0px;
+}
+.logo{
+    width: 165px;
+    height: 70px;
+    background-image: url(/img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.info{
+    padding: 0px;
+    & .info-link{
+        text-decoration: none;
+        @include text();
+    }
+}
+.footer-form{
+    margin-bottom: 18px;
+    & input{
+        @include text();
+        padding-left: 10px;
+        margin-right: 35px;
+        max-width: 204px;
+        height: 35px;
+        border: none;
+        border-radius: 20px;
+        background-color: #D7D7D7;
+    }
+    & .submit-btn{
+        @include btn();
+        @include text($color:white);
+        width: 107px;
+        height: 35px;
+    }
+}
+.form-note{
+    @include text($size:8px)
+}

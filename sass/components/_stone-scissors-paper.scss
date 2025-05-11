@@ -1,0 +1,49 @@
+.stone-scissors-paper{
+    display: flex;
+    position: relative;
+}
+.central-div{
+    width: 536px;
+    padding: 36px 0;
+    margin: 0 auto;
+    border-top: solid 2px $dark-text;
+    @include text();
+    text-align: center;
+    & .com-btn{
+        width: 182px;
+        height: 35px;
+        margin-top: 35px;
+        @include btn();
+    }
+    & .result{
+        margin-top: 35px;
+    }
+}
+.title{
+    @include text($size:16px);
+}
+.btn-ul{
+    display: flex;
+    gap: 38px;
+    width: 256px;
+    margin: 35px auto 0px;
+    padding: 0;
+}
+.game-btn{
+    width: 60px;
+    height: 60px;
+    @include btn();
+    & svg{
+        margin: 0 auto;
+    }
+}
+.score{
+    @include text();
+    position: absolute;
+    padding: 0;
+    top: 93px;
+    right: 219px;
+    & p{
+        margin-bottom: 7px;
+    }
+}
