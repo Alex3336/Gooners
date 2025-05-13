@@ -70,6 +70,9 @@
     z-index: 999;
 
     @include text($size:14px);
+    & .game-over-title{
+        margin: 18px 0;
+    }
     & .restart{
         width: 72px;
         height: 64px;

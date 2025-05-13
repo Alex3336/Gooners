@@ -31,7 +31,8 @@
 }
 .game-btn{
     width: 60px;
-    height: 60px;
+    height: 60px;       
+    padding: 0;
     @include btn();
     & svg{
         margin: 0 auto;

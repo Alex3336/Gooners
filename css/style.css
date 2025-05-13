@@ -6,6 +6,8 @@
 }
 
 .container {
+  position: relative;
+  z-index: 1;
   width: 1090px;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -27,6 +29,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #FFF;
+}
+
+.main-bg {
+  background-image: url("/img/mainBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F5F5F5;
 }
 
 .stone-scissors-paper {
@@ -80,6 +90,7 @@
 .game-btn {
   width: 60px;
   height: 60px;
+  padding: 0;
   border: none;
   border-radius: 20px;
   background-color: #000000;
@@ -210,6 +221,9 @@
   font-size: 14px;
   color: #000000;
 }
+.game-over .game-over-title {
+  margin: 18px 0;
+}
 .game-over .restart {
   width: 72px;
   height: 64px;
@@ -225,6 +239,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 .arrow {
@@ -250,7 +265,6 @@
 .slider li img {
   border-radius: 20px;
   border: none;
-  background-color: #D9D9D9;
 }
 
 .slider-el {
@@ -286,12 +300,16 @@
   display: flex;
   gap: 8px;
   width: 77px;
-  margin: 23px 0px 0px 200px;
+  margin: 23px auto;
   padding: none;
 }
 
 #icon {
   fill: grey;
+}
+
+footer .container {
+  padding: 0;
 }
 
 .footer-div {
@@ -303,13 +321,25 @@
           align-items: center;
   gap: 180px;
   margin: 60px 0px;
+  padding: 0;
 }
 
-.logo {
+.logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 165px;
   height: 70px;
-  background-size: contain;
-  background-repeat: no-repeat;
+}
+.logo-footer .logo-footer-text {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
 }
 
 .info {

@@ -2,7 +2,7 @@ let buttons = document.querySelectorAll('.game-btn');
 let comBtn = document.querySelector('.com-btn');
 let userScoreTxt = document.querySelector('.user-score');
 let comScoreTxt = document.querySelector('.computer-score');
-let result = document.querySelector('.result');
+let result = document.querySelector('.stone-scissors-paper-result');
 
 let userChoice;
 let comChoice;

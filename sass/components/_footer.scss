@@ -1,14 +1,24 @@
+footer{
+    & .container{
+        padding: 0;
+    }
+}
 .footer-div{
     display: flex;
     align-items: center;
     gap: 180px;
     margin: 60px 0px;
+    padding: 0;
 }
-.logo{
+.logo-footer{
+    display: flex;
+    gap: 15px;
+    align-items: center;
     width: 165px;
     height: 70px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    & .logo-footer-text{
+    @include text($size:18px)
+    }
 }
 .info{
     padding: 0px;

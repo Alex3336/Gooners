@@ -3,15 +3,21 @@ let cactus = document.querySelector('.cactus');
 let gameOver = document.querySelector('.game-over');
 let restartBtn = document.querySelector('.restart');
 
-function hendlerClick(){
-    if(dino.classList != 'jump'){
+function hendlerClick() {
+    if (dino.classList != 'jump') {
         dino.classList.add('jump');
     }
-    setTimeout(function(){
+    setTimeout(function () {
         dino.classList.remove('jump');
     }, 1000);
 }
-document.addEventListener('keydown', hendlerClick);
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'ArrowUp') {
+        hendlerClick()
+    }
+    
+});
 
 let dinoAlive = setInterval(function(){
     let dinoTop = parseInt(getComputedStyle(dino).top);
