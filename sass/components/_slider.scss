@@ -2,6 +2,11 @@
     display: flex;
     position: relative;
     width: 100%;
+    margin-bottom: 36px;
+    & .central-div{
+        padding-bottom: 0px;
+        border-top: solid 2px $dark-text;
+    }
 }
 .arrow{
     position: absolute;
@@ -44,7 +49,7 @@
 }
 .student-name{
     @include text($size:14px);
-    margin: 20px 0px;
+    margin: 15px 0px 5px;
 }
 .slider-rec{
     display: flex;

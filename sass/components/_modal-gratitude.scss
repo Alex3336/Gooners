@@ -22,8 +22,7 @@
 
     &.is-open {
         display: block;
-        transform: translateX(0); 
-    
+        transform: translateX(0);
     }
     &.gratitude-container.gratitude-toggle {
             position: absolute;
@@ -35,7 +34,7 @@
 .subscribe-gratitude{
     position: relative;
     top: 10%;
-    left: 40%;
+    left: 35%;
     background-color:white;
     width: 463px;
     height: 245px;
