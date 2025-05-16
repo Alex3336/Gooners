@@ -38,6 +38,10 @@ footer{
         border: none;
         border-radius: 20px;
         background-color: #D7D7D7;
+        
+        &:focus{
+          outline: none;
+        }
     }
     & .submit-btn{
         @include btn();

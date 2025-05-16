@@ -105,7 +105,7 @@
   width: 536px;
   padding: 36px 0;
   margin: 0 auto;
-  border-bottom: solid 2px #000000;
+  border-top: solid 2px #000000;
   font-family: "Montserrat Alternates";
   font-weight: 400;
   font-size: 12px;
@@ -306,7 +306,7 @@
 }
 .slider-sec .central-div {
   padding-bottom: 0px;
-  border-top: solid 2px #000000;
+  border-bottom: solid 2px #000000;
 }
 
 .arrow {
@@ -436,6 +436,9 @@ footer .container {
   border-radius: 20px;
   background-color: #D7D7D7;
 }
+.footer-form input:focus {
+  outline: none;
+}
 .footer-form .submit-btn {
   border: none;
   border-radius: 20px;
@@ -474,7 +477,7 @@ footer .container {
   width: 100vw;
   height: 200vh;
   padding: 15px 32px;
-  background-color: rgba(217, 217, 217, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1140,4 +1143,221 @@ header > .container {
   right: 80px;
   width: 30px;
   height: 30px;
+}
+
+.intgames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.maintext {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.outputtext {
+  padding-left: 48px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #039900;
+  text-align: right;
+  margin-left: 85px;
+}
+
+.gameblok {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 20px;
+  margin-left: 462px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-right: 100px;
+  background-color: white;
+}
+
+.yearinput {
+  width: 205;
+  height: 35;
+  top: 273px;
+  left: 432px;
+  gap: 10px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  background-color: #D7D7D7;
+  border: 1px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.bloktime {
+  width: 392;
+  height: 35;
+  padding-left: 487px;
+  border-width: 1px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+.outputtime {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 76px;
+  height: 15px;
+  padding-left: 30px;
+}
+
+.linetime {
+  width: 100;
+  height: 2px;
+  padding-left: 30px;
+}
+
+.timeinput {
+  width: 150px;
+  height: 35px;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px;
+  background-color: #D7D7D7;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  padding-left: 13px;
+}
+
+.outputtexty {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 252;
+  height: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+
+.maxnumblok {
+  width: 481;
+  height: 35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+.maxnuminput {
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #D7D7D7;
+  border-color: #D7D7D7;
+  border: 1px;
+  width: 140px;
+  margin: 0 20px;
+  padding: 10px 0;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  padding-left: 10px;
+}
+
+.outputNtext {
+  padding-left: 48px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #039900;
+  text-align: right;
+  margin-left: 145px;
+}
+
+.numberblok {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 20px;
+  padding-left: 462px;
+}
+
+.guessNinput {
+  width: 110px;
+  height: 34px;
+  gap: 10px;
+  padding-top: -2px;
+  border-radius: 20px;
+  padding-right: 45px;
+  padding-left: 10px;
+  background-color: #D7D7D7;
+  border: 1px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.numberblok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-right: 100px;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
