@@ -1,12 +1,15 @@
 .stone-scissors-paper{
     display: flex;
     position: relative;
+    & .central-div{
+        border-bottom: solid 2px $dark-text;
+    }
 }
 .central-div{
     width: 536px;
     padding: 36px 0;
     margin: 0 auto;
-    border-bottom: solid 2px $dark-text;
+    border-top: solid 2px $dark-text;
     @include text();
     text-align: center;
     & .com-btn{

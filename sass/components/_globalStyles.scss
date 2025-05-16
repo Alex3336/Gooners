@@ -4,7 +4,6 @@
     padding-inline-start: 0;
 }
 .container{
-    position: relative;
     z-index: 1;
     width: 1090px;
     height: max-content;
@@ -29,15 +28,11 @@
   height: 35px;
   border-radius: 0px 20px 20px 0px;
   background-color: #000000;
-  color: white;
   border: none;
-  margin-left: -45px;
   cursor: pointer;
-  padding-top: -10px;
-  outline: none;
 }
 ::placeholder{
-  font-family: Montserrat Alternates;
+  font-family: 'Montserrat Alternates';
   font-weight: 400;
   font-size: 12px;
   color: #7E7E7E;

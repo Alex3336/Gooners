@@ -20,7 +20,7 @@ function checkLeapYear() {
     const randomIndex = Math.floor(Math.random() * numbers.length);
     const computerNumber = numbers[randomIndex];
     if (parseInt(userInput) === computerNumber) {
-      output.textContent = `Вітаю, ви вгадали число!${computerNumber}`;
+      output.textContent = `Вітаю, ви вгадали число! ${computerNumber}`;
       output.style.color = "#039900"
     } else {
       output.textContent = `Ви програли. Комп’ютер загадав ${computerNumber}`;

@@ -61,10 +61,22 @@
                 </div>
                 <div class="numberblok">
                     <!-- секція №2 -->
-                    <h2 class="maintext">Вгадай число, яке загадав комп’ютер</h2>
-                    <input type="number" id="guessNinput" class="guessNinput" placeholder="Введіть число">
-                    <button class="btn-main" onclick="checkGuessNumber()"><img src="./img/search.svg" alt=""></button>
-                    <p class="outputNtext">Вітаю, ви вгадали число! (number) </p>
+                     <div class="central-div">
+                    <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
+                    </div>
+                    <div class="guess-number-sec"> 
+                        <div class="guess-number-search">
+                            <input type="text" id="guessNinput" class="guessNinput" placeholder="Введіть число">
+                            <button class="btn-main" onclick="checkGuessNumber()">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
+                                    <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34665 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="outputNtext"></p>
+                    </div>
+                    
                 </div>
                 <div class="stone-scissors-paper">
                     <!-- секція №3 -->
@@ -158,13 +170,17 @@
                     </div>
                 </div>
                 <div class="maxnumblok">
-                    <!-- секція №8 -->
-                    <h2 class="maintext">Введіть 3 числа</h2>
-                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
-                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
-                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
-                    <div>
-                        <p id="result" class="outputtexty">Найбільше число, яке ви ввели - (число)</p>
+                        <!-- секція №8 -->
+                    <div class="central-div">
+                        <h2 class="title">Введіть 3 числа</h2>
+                        <ul class="type-nun-list">
+                            <li><input type="text" id="maxnuminput" class="maxnuminput" placeholder="Введіть число"></li>
+                            <li><input type="text" id="maxnuminput" class="maxnuminput" placeholder="Введіть число"></li>
+                            <li><input type="text" id="maxnuminput" class="maxnuminput" placeholder="Введіть число"></li>
+                        </ul>
+                        <div>
+                            <p id="result" class="outputtexty">Найбільше число, яке ви ввели - (число)</p>
+                        </div>
                     </div>
                 </div>
                 <div class="slider-sec">
