@@ -3,6 +3,8 @@
     position: relative;
     & > .central-div{
         padding-top: 0;
+        border-bottom: solid 2px $dark-text;
+        border-top: none;
     }
 }
 .central-div{
