@@ -8,18 +8,26 @@
     font-weight: 400;
     font-size: 16px;
 }
-.scientists-choose-list{
+.scientists-list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 36px 59px;
     width: 577px;
 }
-.scientists-choose-item{
+.scientists-item{
     width: 100px;
     height: 100px;
     background-color: $scientistsBackground;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scientist-name{
+    color: $black;
+    text-align: center;
+    font-size: 8px;
 }
 .scientists-questions-list{
     display: flex;
@@ -30,14 +38,16 @@
     justify-content: center;
 }
 .scientists-questions-item{
-    background-color: $black;
-    border-radius: 20px;
     height: min-content;
 }
-.scientists-questions-text{
+.scientists-questions-button{
     color: $white;
     font-size: 12px;
     padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: $black;
+    cursor: pointer;
 }
 .scientists-questions-position{
     display: flex;

@@ -1,0 +1,117 @@
+.modalbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 576px;
+  height: 316px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+.btnclose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.textmodal {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  white-space: pre-line;
+}
+
+.nameint {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.modalinput {
+  width:169px ;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #D7D7D7;
+  border: none;
+  padding-left: 15px;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  display: block;
+  margin: 0 auto 20px auto;
+  box-sizing: border-box;
+}
+
+.modalbotton {
+  display: block;
+  margin: 0 auto;
+  background-color: #000;
+  color: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btntext {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.boxsvgmodal1,
+.boxsvgmodal2,
+.boxsvgmodal3,
+.boxsvgmodal4 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+.boxsvgmodal1 {
+  position: absolute;
+  top: 160px;     
+  padding-left: 30px;   
+  width: 30px;
+  height: 30px;
+}
+
+.boxsvgmodal2 {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+}
+
+.boxsvgmodal3 {
+  position: absolute;
+  top: 160px;    
+  padding-left: 500px;  
+  width: 30px;
+  height: 30px;
+}
+
+.boxsvgmodal4 {
+  position: absolute;
+  bottom: 30px;
+  right: 80px;
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,57 @@
+.intgames{
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+ color: #000000;
+}
+.maintext{
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  padding-top: 20px;
+}
+.outputtext{
+  padding-left: 48px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#039900;
+  text-align: right;
+  margin-left: 85px;
+}
+.gameblok{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 20px;
+  margin-left:462px ;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  padding-right: 100px;
+  background-color: white;
+}
+.yearinput{
+  width: 205;
+  height: 35;
+  top: 273px;
+  left: 432px;
+  gap: 10px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+ background-color: #D7D7D7;  
+ border: 1px;
+ box-shadow: 3px 3px 0px 0px #00000040;
+}

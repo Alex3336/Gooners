@@ -4,6 +4,7 @@
     <title>Gooners</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +51,21 @@
     <div class="main-bg">
         <main>
             <div class="container">
+                <h1 class="intgames">Популярні інетрактивні ігри</h1>
+                <div class="gameblok">
+                    <!-- секція №1 -->
+                    <h2 class="maintext">Перевір в який рік ти народився</h2>
+                    <input type="number" id="yearInput" class="yearinput" placeholder="Введіть рік">
+                    <button class="btn-main" onclick="checkLeapYear()"><img src="./img/search.svg"></button>    
+                    <p class="outputtext"></p>
+                </div>
+                <div class="numberblok">
+                    <!-- секція №2 -->
+                    <h2 class="maintext">Вгадай число, яке загадав комп’ютер</h2>
+                    <input type="number" id="guessNinput" class="guessNinput" placeholder="Введіть число">
+                    <button class="btn-main" onclick="checkGuessNumber()"><img src="./img/search.svg" alt=""></button>
+                    <p class="outputNtext">Вітаю, ви вгадали число! (number) </p>
+                </div>
                 <div class="stone-scissors-paper">
                     <!-- секція №3 -->
                     <div class="central-div">
@@ -110,6 +126,14 @@
                         <p class="calculator-result">Результат</p>
                     </div>
                 </div>
+                <div class="bloktime">
+                    <!-- секція №5 -->
+                    <h2 class="maintext">Калькулятор часу</h2>
+                    <div class="boxtimeint"><input type="number" id="timekalckinput" class="timeinput" placeholder="Введіть число"></div>
+                    <button class="btn-main" onclick="checktimekalck()"><img src="./img/search.svg" alt=""></button>
+                    <img class="linetime" src="./img/border.svg" alt="">
+                    <p class="outputtime">3 дн. 15:45:01</p>
+                </div>
                 <div class="google-dino">
                     <!-- секція №6 -->
                     <div class="central-div">
@@ -133,6 +157,16 @@
                         <img class="ball" src="./img/ball.png" alt="ball">
                     </div>
                 </div>
+                <div class="maxnumblok">
+                    <!-- секція №8 -->
+                    <h2 class="maintext">Введіть 3 числа</h2>
+                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
+                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
+                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
+                    <div>
+                        <p id="result" class="outputtexty">Найбільше число, яке ви ввели - (число)</p>
+                    </div>
+                </div>
                 <div class="slider-sec">
                     <!-- секція №9 -->
                     <div class="central-div">
@@ -140,9 +174,8 @@
                         <button id="arrow-left" class="arrow">
                             <svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M51 1L0.999998 51L51 101" stroke="black"/>
-                                </svg>
+                            </svg>
                         </button>
-
                         <ul class="slider">
                             <li class="slider-el"><img src="./img/sashko.jpg" width="150" height="150">
                                 <p class="student-name">Сашко</p>
@@ -184,51 +217,75 @@
                 <div class="scientists">
                     <!-- секція №10 -->
                     <h2 class="scientists-title">Обери вченого/их</h2>
-                    <ul class="scientists-choose-list">
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
-                        <li class="scientists-choose-item"></li>
+                    <ul class="scientists-list">
+                        <li class="scientists-item">
+                            <p id="1" class="scientist-name">Albert Einshtein<br> 1879-1955</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="2" class="scientist-name">Isaac Newton<br> 1643-1727</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="3" class="scientist-name">Galileo Galilei<br> 1564-1642</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="4" class="scientist-name">Marie Curie<br> 1867-1934</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="5" class="scientist-name">Johannes Kepler<br> 1571-1630</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="6" class="scientist-name">Nicolaus Copernicus<br> 1473-1543</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="7" class="scientist-name">Max Planck<br> 1858-1947</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="8" class="scientist-name">Katherine Blodgett<br> 1898-1979</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="9" class="scientist-name">Ada Lovelace<br> 1815-1852</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="10" class="scientist-name">Sarah E. Goode<br> 1855-1905</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="11" class="scientist-name">Lise Meitner<br> 1878-1968</p>
+                        </li>
+                        <li class="scientists-item">
+                            <p id="12" class="scientist-name">Hanna Hammarström<br> 1829-1909</p>
+                        </li>
                     </ul>
                     <ul class="scientists-questions-list">
                         <div class="scientists-questions-position">
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Які вчені народилися в 19 ст.</p>
+                                <button class="scientists-questions-button">Які вчені народилися в 19 ст.</button>
                             </li>
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Відсортувати вчених за алфавітом</p>
+                                <button class="scientists-questions-button">Відсортувати вчених за алфавітом</button>
                             </li>
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Відсортувати вчених за кількістю прожитих років</p>
+                                <button class="scientists-questions-button">Відсортувати вчених за кількістю прожитих років</button>
                             </li>
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Знайти вченого, який народився найпізніше</p>
+                                <button class="scientists-questions-button">Знайти вченого, який народився найпізніше</button>
                             </li>
                         </div>
                         <div class="scientists-questions-position">
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Знайти рік народження Albert Einshtein</p>
+                                <button class="scientists-questions-button">Знайти рік народження Albert Einshtein</button>
                             </li>
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Знайти вчених, прізвища яких починаються на на літеру “С” </p>
+                                <button class="scientists-questions-button">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
                             </li>
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Видалити всіх вчених, ім’я яких починається на “А”</p>
+                                <button class="scientists-questions-button">Видалити всіх вчених, ім’я яких починається на “А”</button>
                             </li>
                             <li class="scientists-questions-item">
-                                <p class="scientists-questions-text">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</p>
+                                <button class="scientists-questions-button">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</button>
                             </li>
                         </div>
                         <li class="scientists-questions-item">
-                            <p class="scientists-questions-text">Знайти вчених, в яких співпадають перші літери імені і прізвища</p>
+                            <button class="scientists-questions-button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
                         </li>
                     </ul>
                 </div>
@@ -283,11 +340,31 @@
             <h1>Дякую за підписку!</h1>
         </div>
     </div>
+    <div class=" modalbox">
+        <button class="btnclose" onclick="addname()"><img src="./img/cross.svg" alt=""></button>
+        <div class="modal name">
+            <p class="textmodal">
+                Привіт!
+                Ви потрапили на сайт інтерактивних ігор та завдань
+                Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                Бажаємо Вам гарно провести час!
+            </p>
+            <p class="nameint">Введіть своє ім’я:</p>
+            <input type="text" id="username" class="modalinput" placeholder="Ваше ім’я...">
+            <button class="modalbotton"><p class="btntext">Зберегти</p></button>
+            <div class="boxsvgmodal1"><img src="./img/sword 1.svg" alt=""></div>
+            <div class="boxsvgmodal2"><img src="./img/puzzle 1.svg" alt=""></div>
+            <div class="boxsvgmodal3"><img src="./img/game-development 1.svg" alt=""></div>
+            <div class="boxsvgmodal4"><img src="./img/tic-tac-toe 1.svg" alt=""></div>
+        </div>
+    </div>
     <script src="./js/footer.js" type="module"></script>
     <script src="./js/_stone-scissors-paper.js" type="module"></script>
     <script src="./js/slider.js" type="module"></script>
     <script src="./js/_dino.js" type="module"></script>
     <script src="./js/calculator.js" type="module"></script>
     <script src="./js/football.js" type="module"></script>
+    <script src="./js/scientists.js" type="module"></script>
+    <script src="./js/mikyta.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const firstInput = document.querySelector('.first');
 const secondInput = document.querySelector('.second');
-const resultOutput= document.querySelector('.result');
+const resultOutput= document.querySelector('.calculator-result');
 const resultButton = document.querySelector('.result-button');
 const addButton = document.querySelector('.js-add');
 const subtractButton = document.querySelector('.js-subtraction');
