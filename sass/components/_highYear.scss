@@ -1,0 +1,19 @@
+.high-year{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 36px;
+    width: 536px;
+    border-bottom: solid 2px $dark-text;
+    row-gap: 36px;
+    column-gap: 1px;
+    align-items: center;
+}
+.high-year-title{
+    @include text($size: 16px);
+    width: 100%;
+    text-align: center;
+}
+.high-year-result{
+    @include text($color: $green-col);  
+}

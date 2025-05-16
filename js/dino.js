@@ -13,7 +13,7 @@ function hendlerClick() {
 }
 
 document.addEventListener('keydown', event => {
-    if (event.key === 'ArrowUp') {
+    if (event.key === 'ArrowUp' || event.code === "KeyW") {
         hendlerClick()
     }
     

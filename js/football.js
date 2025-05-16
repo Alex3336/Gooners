@@ -10,4 +10,3 @@ document.addEventListener('mousedown', (e) => {
         ball.style.top = mouseY - 25 + 'px';
     }
 });
-

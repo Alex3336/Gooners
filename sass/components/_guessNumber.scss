@@ -1,0 +1,20 @@
+.guess-number{
+    display: flex;
+    padding-block: 36px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 576px;
+    row-gap: 36px;
+    justify-content: space-between;
+}
+.guess-number-title{
+    @include text($size: 16px);
+    width: 576px;
+    text-align: center;
+}
+.guess-number-input{
+    width: 150px;
+}
+.guess-number-result{
+    @include text($color: $green-col);
+}

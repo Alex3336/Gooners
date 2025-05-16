@@ -9,7 +9,7 @@ header > .container{
     align-items: center;
 }
 .logo-text{
-    font-size: 12px;
+    @include text;
 }
 #header-select:focus, #header-select:focus-visible, #header-select{
     outline: none;
@@ -18,22 +18,20 @@ header > .container{
     cursor: pointer;
 }
 #header-select{
+    @include text;    
     all: unset;
     width: 100px;
     background-image: url(/img/header-select-arrow.svg);
     background-size: 13px;
     background-position: 100% 50%;
     background-repeat: no-repeat;
-    font-size: 12px;
 }
 .nav-link{
-    color: $black;
+    @include text;
     text-decoration: none;
-    font-size: 12px;
 }
 .header-welcome{
-    font-weight: inherit;
-    font-size: 12px;
+    @include text;
 }
 
 .switch-container{

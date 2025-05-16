@@ -1,9 +1,12 @@
+.google-dino > .central-div{
+    border-bottom: none;
+    padding-top: 0;
+}
 .field{
     position: relative;
     width: 620px;
     height: 270px;
     margin:0 auto;
-    border-bottom: solid 2px $dark-text;
 };
 .game{
     width: 620px;

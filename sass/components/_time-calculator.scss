@@ -1,0 +1,31 @@
+.time-calculator{
+    display: flex;
+    padding-block: 36px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 576px;
+    row-gap: 36px;
+    justify-content: center;
+}
+.time-calculator-input{
+    position: relative;
+}
+.time-calculator-title{
+    @include text($size: 15px);
+    padding-top: 36px;
+    width: 536px;
+    border-top: 2px solid $black;
+    text-align: center;
+}
+.time-calculator-result{
+    @include text;
+    &::before{
+        content: "";
+        background-image: url(/img/border.svg);
+        width: 100px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+}

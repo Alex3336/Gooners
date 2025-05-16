@@ -1,6 +1,9 @@
 .stone-scissors-paper{
     display: flex;
     position: relative;
+    & > .central-div{
+        padding-top: 0;
+    }
 }
 .central-div{
     width: 536px;
@@ -21,6 +24,8 @@
 }
 .title{
     @include text($size:16px);
+    padding-top: 36px;
+    border-top: solid 2px $dark-text;
 }
 .btn-ul{
     display: flex;

@@ -51,20 +51,24 @@
     <div class="main-bg">
         <main>
             <div class="container">
-                <h1 class="intgames">Популярні інетрактивні ігри</h1>
-                <div class="gameblok">
+                <h1 class="main-title">Популярні інтeрактивні ігри</h1>
+                <div class="high-year">
                     <!-- секція №1 -->
-                    <h2 class="maintext">Перевір в який рік ти народився</h2>
-                    <input type="number" id="yearInput" class="yearinput" placeholder="Введіть рік">
-                    <button class="btn-main" onclick="checkLeapYear()"><img src="./img/search.svg"></button>    
-                    <p class="outputtext"></p>
+                    <h2 class="high-year-title">Перевір в який рік ти народився</h2>   
+                    <div class="high-year-section button-container">
+                        <input placeholder="Введіть рік народження" class="high-year-input button-container-input" type="text">
+                        <button class="high-year-button button-container-button"></button>
+                    </div>
+                    <p class="high-year-result">Ви народилися у високосний рік!</p>
                 </div>
-                <div class="numberblok">
+                <div class="guess-number">
                     <!-- секція №2 -->
-                    <h2 class="maintext">Вгадай число, яке загадав комп’ютер</h2>
-                    <input type="number" id="guessNinput" class="guessNinput" placeholder="Введіть число">
-                    <button class="btn-main" onclick="checkGuessNumber()"><img src="./img/search.svg" alt=""></button>
-                    <p class="outputNtext">Вітаю, ви вгадали число! (number) </p>
+                    <h2 class="guess-number-title">Вгадай число, яке загадав комп’ютер</h2>
+                    <div class="guess-number-section button-container">
+                        <input placeholder="Введіть число" class="guess-number-input button-container-input" type="text">
+                        <button class="guess-number-button button-container-button"></button>
+                    </div>
+                    <p class="guess-number-result">Вітаю, ви вгадали число!</p>
                 </div>
                 <div class="stone-scissors-paper">
                     <!-- секція №3 -->
@@ -126,13 +130,14 @@
                         <p class="calculator-result">Результат</p>
                     </div>
                 </div>
-                <div class="bloktime">
+                <div class="time-calculator">
                     <!-- секція №5 -->
-                    <h2 class="maintext">Калькулятор часу</h2>
-                    <div class="boxtimeint"><input type="number" id="timekalckinput" class="timeinput" placeholder="Введіть число"></div>
-                    <button class="btn-main" onclick="checktimekalck()"><img src="./img/search.svg" alt=""></button>
-                    <img class="linetime" src="./img/border.svg" alt="">
-                    <p class="outputtime">3 дн. 15:45:01</p>
+                    <h2 class="time-calculator-title">Калькулятор часу</h2>
+                    <div class="high-year-section button-container">
+                        <input placeholder="Введіть число" class="time-calculator-input button-container-input" type="text">
+                        <button class="time-calculator-button button-container-button"></button>
+                    </div>
+                    <p class="time-calculator-result">3 дн. 15:45:01</p>
                 </div>
                 <div class="google-dino">
                     <!-- секція №6 -->
@@ -155,16 +160,6 @@
                     <h2 class="football-title">Футбол</h2>
                     <div class="football-pitch">
                         <img class="ball" src="./img/ball.png" alt="ball">
-                    </div>
-                </div>
-                <div class="maxnumblok">
-                    <!-- секція №8 -->
-                    <h2 class="maintext">Введіть 3 числа</h2>
-                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
-                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
-                    <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
-                    <div>
-                        <p id="result" class="outputtexty">Найбільше число, яке ви ввели - (число)</p>
                     </div>
                 </div>
                 <div class="slider-sec">
@@ -323,20 +318,20 @@
     </footer>
     <div class="gratitude-container js-gratitude-container" id="modal-gratitude">
         <div class="subscribe-gratitude">
-        <button class="gratitude-toggle js-close-gratitude"> 
-            <svg 
-            fill="currentColor" 
-            viewBox="0 0 20 20" 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24"> 
-            <path 
-                fill-rule="evenodd" 
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" 
-                clip-rule="evenodd" 
-            ></path> 
-            </svg> 
-        </button> 
+            <button class="gratitude-toggle js-close-gratitude"> 
+                <svg 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24"> 
+                <path 
+                    fill-rule="evenodd" 
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" 
+                    clip-rule="evenodd" 
+                ></path> 
+                </svg> 
+            </button> 
             <h1>Дякую за підписку!</h1>
         </div>
     </div>
@@ -359,12 +354,13 @@
         </div>
     </div>
     <script src="./js/footer.js" type="module"></script>
-    <script src="./js/_stone-scissors-paper.js" type="module"></script>
+    <script src="./js/stone-scissors-paper.js" type="module"></script>
     <script src="./js/slider.js" type="module"></script>
-    <script src="./js/_dino.js" type="module"></script>
+    <script src="./js/dino.js" type="module"></script>
     <script src="./js/calculator.js" type="module"></script>
     <script src="./js/football.js" type="module"></script>
     <script src="./js/scientists.js" type="module"></script>
-    <script src="./js/mikyta.js"></script>
+    <script src="./js/high-year.js" type="module"></script>
+    <script src="./js/guess-number.js" type="module"></script>
 </body>
 </html>

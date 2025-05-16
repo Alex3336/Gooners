@@ -5,8 +5,7 @@
     row-gap: 36px;
 }
 .scientists-title{
-    font-weight: 400;
-    font-size: 16px;
+    @include text($size: 16px);
 }
 .scientists-list{
     display: flex;
@@ -25,9 +24,8 @@
     justify-content: center;
 }
 .scientist-name{
-    color: $black;
+    @include text($size: 12px);
     text-align: center;
-    font-size: 8px;
 }
 .scientists-questions-list{
     display: flex;
@@ -41,8 +39,7 @@
     height: min-content;
 }
 .scientists-questions-button{
-    color: $white;
-    font-size: 12px;
+    @include text($color: $white);
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
