@@ -936,6 +936,7 @@ header > .container {
   border-radius: 20px;
   background-color: #000;
   cursor: pointer;
+  text-align: left;
 }
 
 .scientists-questions-position {

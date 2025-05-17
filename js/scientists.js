@@ -89,56 +89,66 @@ const scientistsData = [
 
 questionButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const question = button.textContent.trim();
+        const question = button.textContent.trim().replace(/\s+/g, ' ');
         let filteredScientists = [];
-        switch (question) {
-            case 'Які вчені народилися в 19 ст.':
-                filteredScientists = scientistsData.filter(scientist => scientist.born >= 1801 && scientist.born <= 1900);
+
+        switch(question){
+            case "Які вчені народилися в 19 ст.":
+                filteredScientists = scientistsData.filter(s => s.born >= 1801 && s.born <= 1900);
                 break;
-            case 'Відсортувати вчених за алфавітом':
-                filteredScientists = [...scientistsData].sort((a, b) => a.surname.localeCompare(b.surname));
-                break;
-            case 'Відсортувати вчених за кількістю прожитих років':
+            case "Відсортувати вчених за алфавітом":
+                filteredScientists = [...scientistsData].sort((a, b) => a.name.localeCompare(b.name));
+                break;  
+            case "Відсортувати вчених за кількістю прожитих років":
                 filteredScientists = [...scientistsData].sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
                 break;
-            case 'Знайти вченого, який народився найпізніше':
-                const latestBornYear = Math.max(...scientistsData.map(scientist => scientist.born));
-                filteredScientists = scientistsData.filter(scientist => scientist.born === latestBornYear);
+            case "Знайти вченого, який народився найпізніше":
+                const latest = Math.max(...scientistsData.map(s => s.born));
+                filteredScientists = scientistsData.filter(s => s.born === latest);
                 break;
-            case 'Знайти рік народження Albert Einshtein':
-                filteredScientists = scientistsData.filter(scientist => scientist.name === 'Albert' && scientist.surname === 'Einstein');
+            case "Знайти рік народження Albert Einstein":
+                filteredScientists = scientistsData.filter(s => s.name === 'Albert' && s.surname === 'Einstein');
                 break;
-            case 'Знайти вчених, прізвища яких починаються на на літеру “С”':
-                filteredScientists = scientistsData.filter(scientist => scientist.surname.startsWith('C'));
+            case 'Знайти вчених, прізвища яких починаються на літеру "С"':
+                filteredScientists = scientistsData.filter(s => s.surname.startsWith('C'));
                 break;
-            case 'Видалити всіх вчених, ім’я яких починається на “А”':
-                filteredScientists = scientistsData.filter(scientist => !scientist.name.startsWith('A'));
+        
+            case 'Видалити всіх вчених, ім’я яких починається на "А"':
+                filteredScientists = scientistsData.filter(s => !s.name.startsWith('A'));
                 break;
-            case 'Знайти вченого, який прожив найдовше і вченого, який прожив найменше':
-                const scientistsWithLifespans = scientistsData.map(scientist => ({
-                    ...scientist,
-                    lifespan: scientist.dead - scientist.born
-                }));
-
-                const longestLifespan = Math.max(...scientistsWithLifespans.map(scientist => scientist.lifespan));
-                const shortestLifespan = Math.min(...scientistsWithLifespans.map(scientist => scientist.lifespan));
-
-                filteredScientists = scientistsWithLifespans.filter(scientist => scientist.lifespan === longestLifespan || scientist.lifespan === shortestLifespan);
+            case "Знайти вченого, який прожив найдовше і вченого, який прожив найменше":
+                const withLifespan = scientistsData.map(s => ({ ...s, lifespan: s.dead - s.born }));
+                const max = Math.max(...withLifespan.map(s => s.lifespan));
+                const min = Math.min(...withLifespan.map(s => s.lifespan));
+                filteredScientists = withLifespan.filter(s => s.lifespan === max || s.lifespan === min);
+                break;
+        
+            case "Знайти вчених, в яких співпадають перші літери імені і прізвища":
+                filteredScientists = scientistsData.filter(s => s.name[0] === s.surname[0]);
                 break;
             default:
-                filteredScientists = scientistsData; 
+                filteredScientists = scientistsData;
+                break;
         }
+
         displayScientists(filteredScientists);
-        console.log(filteredScientists);
     });
 });
 
+
 function displayScientists(arr) {
-    scientistItem.forEach(item => item.style.display = 'none');
+    const list = document.querySelector('.scientists-list');
+    list.innerHTML = '';
+
     arr.forEach(scientist => {
-        const item = document.querySelector(`.scientists-item p[id="${scientist.id}"]`);
-        if (item) {
-            item.parentElement.style.display = 'flex';
-        }
+        const li = document.createElement('li');
+        li.className = 'scientists-item';
+
+        const p = document.createElement('p');
+        p.className = 'scientist-name';
+        p.id = scientist.id;
+        p.innerHTML = `${scientist.name} ${scientist.surname}<br> ${scientist.born}-${scientist.dead}`;
+        li.appendChild(p);
+        list.appendChild(li);
     });
 }
