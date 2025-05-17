@@ -746,12 +746,25 @@ header > .container {
   font-weight: 400;
   font-size: 12px;
   color: #000000;
-  all: unset;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 100px;
   background-image: url(/img/header-select-arrow.svg);
   background-size: 13px;
   background-position: 100% 50%;
   background-repeat: no-repeat;
+}
+
+.header-option {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 
 .nav-link {
@@ -814,11 +827,14 @@ header > .container {
 .header-slider::before {
   position: absolute;
   content: "";
+  background-image: url(/img/sun.svg);
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 18px;
   height: 18px;
   width: 20px;
   height: 20px;
-  background-color: #FFF;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 50%;
@@ -826,6 +842,8 @@ header > .container {
 }
 
 .switcher:checked + .header-slider::before {
+  background-image: url(/img/moon.svg);
+  background-color: #000;
   -webkit-transform: translateX(20px);
   transform: translateX(20px);
 }
@@ -1097,7 +1115,7 @@ header > .container {
 }
 
 .textmodal {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -1108,7 +1126,7 @@ header > .container {
 }
 
 .nameint {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -1123,14 +1141,20 @@ header > .container {
   border: none;
   padding-left: 15px;
   font-size: 14px;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   display: block;
   margin: 0 auto 20px auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
+  border: none;
 }
 
-.modalbotton {
+.modalbutton {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFF;
   display: block;
   margin: 0 auto;
   background-color: #000;
@@ -1142,14 +1166,6 @@ header > .container {
   -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-}
-
-.btntext {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: white;
-  margin: 0;
 }
 
 .boxsvgmodal1,

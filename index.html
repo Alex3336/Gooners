@@ -41,11 +41,11 @@
                     <span class="header-slider"></span>
                 </label>
             </div>
-            <h3
-                class="header-welcome"
+            <p
+                class="header-welcome js-userName"
                 >
-                Вітаємо, <h3 class="js-userName"></h3>
-            </h3>
+                Вітаємо, 
+            </p>
         </div>
     </header>
     <div class="main-bg">
@@ -349,24 +349,26 @@
             <h1>Дякую за підписку!</h1>
         </div>
     </div>
-    <div class=" modalbox">
-        <button class="btnclose" onclick="addname()"><img src="./img/cross.svg" alt=""></button>
+    <div class="modalbox">
+        <button class="btnclose">
+            <img src="./img/cross.svg" alt="Закрити">
+        </button>
         <div class="modal name">
             <p class="textmodal">
-                Привіт!
-                Ви потрапили на сайт інтерактивних ігор та завдань
-                Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
-                Бажаємо Вам гарно провести час!
+            Привіт! Ви потрапили на сайт інтерактивних ігор та завдань.
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+            Бажаємо Вам гарно провести час!
             </p>
             <p class="nameint">Введіть своє ім’я:</p>
             <input type="text" id="username" class="modalinput" placeholder="Ваше ім’я...">
-            <button class="modalbotton"><p class="btntext">Зберегти</p></button>
+            <button class="modalbutton">Зберегти</button>
             <div class="boxsvgmodal1"><img src="./img/sword 1.svg" alt=""></div>
             <div class="boxsvgmodal2"><img src="./img/puzzle 1.svg" alt=""></div>
             <div class="boxsvgmodal3"><img src="./img/game-development 1.svg" alt=""></div>
             <div class="boxsvgmodal4"><img src="./img/tic-tac-toe 1.svg" alt=""></div>
         </div>
     </div>
+
     <script src="./js/footer.js" type="module"></script>
     <script src="./js/stone-scissors-paper.js" type="module"></script>
     <script src="./js/slider.js" type="module"></script>
@@ -376,5 +378,7 @@
     <script src="./js/scientists.js" type="module"></script>
     <script src="./js/high-year.js" type="module"></script>
     <script src="./js/guess-number.js" type="module"></script>
+    <script src="./js/timeCalculator.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 </html>

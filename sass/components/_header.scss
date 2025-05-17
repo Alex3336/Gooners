@@ -18,13 +18,17 @@ header > .container{
     cursor: pointer;
 }
 #header-select{
-    @include text;    
-    all: unset;
+    @include text;
+    user-select: none;
+    appearance: none;
     width: 100px;
     background-image: url(/img/header-select-arrow.svg);
     background-size: 13px;
     background-position: 100% 50%;
     background-repeat: no-repeat;
+}
+.header-option{
+    @include text
 }
 .nav-link{
     @include text;
@@ -69,17 +73,22 @@ header > .container{
 .header-slider::before{
     position: absolute;
     content: "";
+    background-image: url(/img/sun.svg);
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 18px;
     height: 18px;
     width: 20px;
     height: 20px;
-    background-color: $white;
     -webkit-transition: .2s;
     transition: .2s;
     border-radius: 50%;
     border: 0.5px $black solid;
 }
 .switcher:checked + .header-slider::before{
+    background-image: url(/img/moon.svg);
+    background-color: $black;
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);

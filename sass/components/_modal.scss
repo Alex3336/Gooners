@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 .textmodal {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -35,7 +35,7 @@
 }
 
 .nameint {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -49,13 +49,16 @@
   border: none;
   padding-left: 15px;
   font-size: 14px;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   display: block;
   margin: 0 auto 20px auto;
   box-sizing: border-box;
+  outline: none;
+  border: none;
 }
 
-.modalbotton {
+.modalbutton {
+  @include text($color: $white);
   display: block;
   margin: 0 auto;
   background-color: #000;
@@ -68,13 +71,6 @@
   cursor: pointer;
 }
 
-.btntext {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: white;
-  margin: 0;
-}
 
 .boxsvgmodal1,
 .boxsvgmodal2,
