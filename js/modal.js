@@ -24,5 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     closeBtn.addEventListener("click", () => {
         modal.style.display = "none";
+        modalShadow.style.display = "none"
     });
 });
