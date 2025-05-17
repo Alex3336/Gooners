@@ -121,6 +121,7 @@
   border-radius: 20px;
   background-color: #000000;
   color: white;
+  cursor: pointer;
 }
 .central-div .stone-scissors-paper-result {
   margin-top: 35px;
@@ -153,6 +154,7 @@
   border-radius: 20px;
   background-color: #000000;
   color: white;
+  cursor: pointer;
 }
 .game-btn svg {
   margin: 0 auto;
