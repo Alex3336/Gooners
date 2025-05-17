@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("userName", name);
             nameDisplay.textContent = `Вітаємо, ${name}!`;
             modal.style.display = "none";
-            modalShadow.style.display = ""
+            modalShadow.style.display = "none"
         }
     });
 
