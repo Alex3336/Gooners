@@ -29,20 +29,7 @@ function checkLeapYear() {
   }
 
   
-  function checktimekalck() {
-    const minutes = parseInt(document.getElementById("timekalckinput").value);
-    const output = document.querySelector(".outputtime");
-    if (isNaN(minutes) || minutes < 0) {
-      output.textContent = "Введіть додатне число хвилин.";
-      return;
-    }
-    const hours = Math.floor(minutes / 60);
-    let mins = minutes % 60;
-    if (mins < 10) {
-      mins = "0" + mins;
-    }
-    output.textContent = hours + ":" + mins;
-  }
+  
 function checkMaxNumber() {
   const a = +document.querySelectorAll("#maxnuminput")[0].value;
   const b = +document.querySelectorAll("#maxnuminput")[1].value;
