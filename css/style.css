@@ -306,10 +306,13 @@
   width: 100%;
   margin-bottom: 36px;
 }
-.slider-sec .central-div {
+.slider-sec > .central-div {
   padding-block: 0px;
   border-bottom: solid 2px #000000;
   border-top: solid 2px #000000;
+}
+.slider-sec > .central-div > .title {
+  border-top: 0;
 }
 
 .arrow {
@@ -580,7 +583,9 @@ footer .container {
   color: #000000;
   display: inline;
   width: 536px;
+  border-top: 2px solid #000;
   text-align: center;
+  padding-top: 36px;
 }
 
 .calculator-input, .calculator-result {
@@ -668,7 +673,6 @@ footer .container {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 30px;
-  padding-bottom: 36px;
 }
 
 .football-title {

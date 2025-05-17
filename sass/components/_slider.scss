@@ -3,12 +3,14 @@
     position: relative;
     width: 100%;
     margin-bottom: 36px;
-    & .central-div{
+    & > .central-div{
         padding-block: 0px;
         border-bottom: solid 2px $dark-text;
         border-top: solid 2px $dark-text;
+        & > .title{
+            border-top: 0;
+        }
     }
-    
 }
 .arrow{
     position: absolute;

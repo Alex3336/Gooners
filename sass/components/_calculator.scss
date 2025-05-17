@@ -9,7 +9,9 @@
     @include text($size: 16px);
     display: inline;
     width: 536px;
+    border-top: 2px solid $black;
     text-align: center;
+    padding-top: 36px;
 }
 .calculator-input{
     @include text($color: $subTextColor);
