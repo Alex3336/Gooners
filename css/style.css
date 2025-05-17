@@ -307,12 +307,8 @@
   margin-bottom: 36px;
 }
 .slider-sec .central-div {
-  padding-bottom: 0px;
+  padding-block: 0px;
   border-bottom: solid 2px #000000;
-}
-.slider-sec .title {
-  border: none;
-  padding-top: 0px;
 }
 
 .arrow {
@@ -456,6 +452,7 @@ footer .container {
   color: white;
   width: 107px;
   height: 35px;
+  cursor: pointer;
 }
 
 .form-note {
@@ -527,10 +524,6 @@ footer .container {
   margin-top: 35px;
 }
 
-.maxnumblok .central-div {
-  border: none;
-}
-
 .outputtexty {
   font-family: "Montserrat Alternates";
   font-weight: 400;
@@ -584,9 +577,7 @@ footer .container {
   color: #000000;
   display: inline;
   width: 536px;
-  border-top: 2px solid #000;
   text-align: center;
-  padding-top: 36px;
 }
 
 .calculator-input, .calculator-result {
@@ -1094,12 +1085,21 @@ header > .container {
   height: 316px;
   background-color: white;
   border-radius: 20px;
-  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: none;
   padding: 30px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.modal-shadow {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btnclose {

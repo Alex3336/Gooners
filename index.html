@@ -137,6 +137,7 @@
                         <input placeholder="Введіть число" class="time-calculator-input button-container-input" type="text">
                         <button class="time-calculator-button button-container-button"></button>
                     </div>
+                    <div class="time-calculator-border"></div>
                     <p class="time-calculator-result">3 дн. 15:45:01</p>
                 </div>
                 <div class="google-dino">
@@ -349,23 +350,25 @@
             <h1>Дякую за підписку!</h1>
         </div>
     </div>
-    <div class="modalbox">
-        <button class="btnclose">
-            <img src="./img/cross.svg" alt="Закрити">
-        </button>
-        <div class="modal name">
-            <p class="textmodal">
-            Привіт! Ви потрапили на сайт інтерактивних ігор та завдань.
-            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
-            Бажаємо Вам гарно провести час!
-            </p>
-            <p class="nameint">Введіть своє ім’я:</p>
-            <input type="text" id="username" class="modalinput" placeholder="Ваше ім’я...">
-            <button class="modalbutton">Зберегти</button>
-            <div class="boxsvgmodal1"><img src="./img/sword 1.svg" alt=""></div>
-            <div class="boxsvgmodal2"><img src="./img/puzzle 1.svg" alt=""></div>
-            <div class="boxsvgmodal3"><img src="./img/game-development 1.svg" alt=""></div>
-            <div class="boxsvgmodal4"><img src="./img/tic-tac-toe 1.svg" alt=""></div>
+    <div class="modal-shadow">
+        <div class="modalbox">
+            <button class="btnclose">
+                <img src="./img/cross.svg" alt="Закрити">
+            </button>
+            <div class="modal name">
+                <p class="textmodal">
+                Привіт! Ви потрапили на сайт інтерактивних ігор та завдань.
+                Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                Бажаємо Вам гарно провести час!
+                </p>
+                <p class="nameint">Введіть своє ім’я:</p>
+                <input type="text" id="username" class="modalinput" placeholder="Ваше ім’я...">
+                <button class="modalbutton">Зберегти</button>
+                <div class="boxsvgmodal1"><img src="./img/sword 1.svg" alt=""></div>
+                <div class="boxsvgmodal2"><img src="./img/puzzle 1.svg" alt=""></div>
+                <div class="boxsvgmodal3"><img src="./img/game-development 1.svg" alt=""></div>
+                <div class="boxsvgmodal4"><img src="./img/tic-tac-toe 1.svg" alt=""></div>
+            </div>
         </div>
     </div>
 
@@ -380,5 +383,6 @@
     <script src="./js/guess-number.js" type="module"></script>
     <script src="./js/timeCalculator.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/checkMaxNum.js" type="module"></script>
 </body>
 </html>

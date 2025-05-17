@@ -4,13 +4,10 @@
     width: 100%;
     margin-bottom: 36px;
     & .central-div{
-        padding-bottom: 0px;
+        padding-block: 0px;
         border-bottom: solid 2px $dark-text;
     }
-    & .title{
-        border: none;
-        padding-top: 0px;
-    }
+    
 }
 .arrow{
     position: absolute;

@@ -48,6 +48,7 @@ footer{
         @include text($color:white);
         width: 107px;
         height: 35px;
+        cursor: pointer;
     }
 }
 .form-note{

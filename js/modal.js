@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.querySelector(".modalbox");
+    const modalShadow = document.querySelector(".modal-shadow");
     const saveBtn = document.querySelector(".modalbutton");
     const closeBtn = document.querySelector(".btnclose");
     const input = document.querySelector("#username");
@@ -14,9 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     saveBtn.addEventListener("click", () => {
         const name = input.value.trim();
         if (name) {
-        localStorage.setItem("userName", name);
-        nameDisplay.textContent = `Вітаємо, ${name}!`;
-        modal.style.display = "none";
+            localStorage.setItem("userName", name);
+            nameDisplay.textContent = `Вітаємо, ${name}!`;
+            modal.style.display = "none";
+            modalShadow.style.display = ""
         }
     });
 
